@@ -62,7 +62,7 @@ cell indices start from zero:  'NAME' is in cell (0, 0) and '21' is in cell (2, 
 //write table content
 users.writeCell(0, 0, "NAME");   users.writeCell(0, 1, "AGE");
 users.writeCell(1, 0, "Divino"); users.writeCell(1, 1, "22");
-users.writeCell(2, 0, "Fire");   users.writeCell(2, 1, "21")
+users.writeCell(2, 0, "Fire");   users.writeCell(2, 1, "21");
 
 
 //the max size of each cell is 20 characters for the sake of memory,
@@ -90,7 +90,7 @@ void loop(){
     }
   }
 
-  Serial.println("\n\n\n\n\n") // space separate the next serial print by 5 empty lines
+  Serial.println("\n\n\n\n\n"); // space separate the next serial print by 5 empty lines
 
   delay(3000);
 
@@ -98,7 +98,7 @@ void loop(){
   Serial.println("-------------read all table content at once ----------------------");
   users.printTable(); //print entire table content to serial monitor
 
-  Serial.println("\n\n\n\n\n") // space separate the next serial print by 5 empty lines
+  Serial.println("\n\n\n\n\n"); // space separate the next serial print by 5 empty lines
 
 
   //to erase the data in a cell, pass an empty string as the data content
